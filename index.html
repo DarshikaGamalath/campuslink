@@ -1,0 +1,2730 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusLink</title>
+
+    <meta name="description"
+          content="Bodex provides point-to-point wireless connectivity, campus network integration and network support.">
+    <style>
+/* =========================================
+   Bodex
+
+   Professional Blue Theme
+*/
+:root {
+    --navy: #090B25;
+    --blue: #087BFF;
+    --bright-blue: #00BFFF;
+    --light-blue: #EEF2FF;
+    --green: #782BFF;
+    --orange: #F000B8;
+    --white: #FFFFFF;
+    --background: #F5F7FF;
+    --text: #20213A;
+    --muted: #626783;
+    --border: #D9DDF0;
+    --shadow: 0 8px 25px rgba(40, 35, 120, 0.10);
+}
+
+
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 100px;
+
+}
+
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: var(--text);
+
+    background: var(--white);
+
+    line-height: 1.6;
+
+}
+
+
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+
+button,
+
+input,
+
+select,
+
+textarea {
+
+    font: inherit;
+
+}
+
+
+
+button,
+
+a {
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+
+
+.container {
+
+    width: min(1180px, calc(100% - 40px));
+
+    margin: 0 auto;
+
+}
+
+
+
+
+
+/* Top Bar */
+
+
+
+.top-bar {
+
+    background: var(--navy);
+
+    color: var(--white);
+
+    font-size: 12px;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+
+.top-bar-inner {
+
+    min-height: 34px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+
+
+
+/* Header And Large Logo */
+
+
+
+
+
+.site-header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    background: var(--white);
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: 0 3px 12px rgba(9, 44, 85, 0.05);
+
+}
+
+
+
+.header-inner {
+
+    min-height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 28px;
+
+}
+
+
+
+.brand {
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+
+.logo {
+
+    width: 260px;
+
+    max-height: 105px;
+
+    height: auto;
+
+    object-fit: contain;
+
+}
+
+
+
+/* Navigation */
+
+
+
+.main-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+
+
+.nav-link {
+
+    color: var(--navy);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+
+}
+
+
+
+.nav-link:hover,
+
+.nav-link.active {
+
+    color: var(--bright-blue);
+
+}
+
+
+
+.nav-cta {
+
+    padding: 11px 17px;
+
+    border: 1px solid var(--blue);
+
+    border-radius: 5px;
+
+    color: var(--white);
+
+    background: var(--blue);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: background 0.2s ease;
+
+}
+
+
+
+.nav-cta:hover {
+
+    background: var(--navy);
+
+}
+
+
+
+.nav-cta span {
+
+    margin-left: 7px;
+
+}
+
+
+
+.menu-toggle {
+
+    display: none;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    background: var(--white);
+
+    color: var(--navy);
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+
+}
+
+
+
+/* =========================================
+
+/* Hero Section */
+*/
+.hero {
+
+    padding: 75px 0 85px;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(circle at 85% 15%, #dceeff 0, transparent 34%),
+
+        linear-gradient(115deg, #ffffff 45%, #f0f7ff 100%);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.hero-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.05fr 0.95fr;
+
+    align-items: center;
+
+    gap: 65px;
+
+}
+
+
+
+.eyebrow {
+
+    display: inline-block;
+
+    color: var(--bright-blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 14px;
+
+}
+
+
+
+.hero h1 {
+
+    color: var(--navy);
+
+    font-size: clamp(35px, 4vw, 53px);
+
+    line-height: 1.15;
+
+    letter-spacing: -1.4px;
+
+    margin: 0 0 22px;
+
+}
+
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: var(--blue);
+
+}
+
+
+
+.hero-description {
+
+    max-width: 550px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    margin: 0 0 28px;
+
+}
+
+
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+
+
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 47px;
+
+    padding: 12px 20px;
+
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+
+        background 0.2s ease,
+
+        color 0.2s ease,
+
+        transform 0.2s ease;
+
+}
+
+
+
+.button:hover {
+
+    transform: translateY(-2px);
+
+}
+
+
+
+.button-primary {
+
+    background: var(--blue);
+
+    border-color: var(--blue);
+
+    color: var(--white);
+
+}
+
+
+
+.button-primary:hover {
+
+    background: var(--navy);
+
+    border-color: var(--navy);
+
+}
+
+
+
+.button-outline {
+
+    background: var(--white);
+
+    border-color: var(--blue);
+
+    color: var(--blue);
+
+}
+
+
+
+.button-outline:hover {
+
+    background: var(--light-blue);
+
+}
+
+
+
+.hero-note {
+
+    margin-top: 26px;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+
+.status-dot {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    box-shadow: 0 0 0 4px #d8f5e9;
+
+}
+
+
+
+/* =========================================
+
+/* Network Diagram Card */
+*/
+.hero-visual {
+
+    position: relative;
+
+    padding: 18px 0 25px;
+
+}
+
+
+
+.network-card {
+
+    position: relative;
+
+    z-index: 1;
+
+    background: var(--white);
+
+    border: 1px solid #cdddeb;
+
+    border-radius: 12px;
+
+    box-shadow: 0 20px 55px rgba(9, 44, 85, 0.13);
+
+    overflow: hidden;
+
+}
+
+
+
+.network-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 24px;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.network-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    color: var(--white);
+
+    background: linear-gradient(135deg, var(--blue), var(--bright-blue));
+
+    border-radius: 10px;
+
+    font-size: 28px;
+
+}
+
+
+
+.network-card-header h2 {
+
+    margin: 0;
+
+    color: var(--navy);
+
+    font-size: 21px;
+
+}
+
+
+
+.network-card-header p {
+
+    margin: 3px 0 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+
+.network-diagram {
+
+    min-height: 235px;
+
+    padding: 30px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    background:
+
+        linear-gradient(#f5faff 1px, transparent 1px),
+
+        linear-gradient(90deg, #f5faff 1px, transparent 1px);
+
+    background-size: 22px 22px;
+
+}
+
+
+
+.building {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 20px 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--white);
+
+    border: 1px solid #cbdceb;
+
+    border-radius: 9px;
+
+}
+
+
+
+.building-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 57px;
+
+    height: 57px;
+
+    margin-bottom: 12px;
+
+    border-radius: 9px;
+
+    color: var(--blue);
+
+    background: var(--light-blue);
+
+    font-size: 38px;
+
+}
+
+
+
+.building strong {
+
+    color: var(--navy);
+
+    font-size: 13px;
+
+}
+
+
+
+.building small {
+
+    margin-top: 5px;
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+}
+
+
+
+.connection {
+
+    width: 65px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+
+.connection-line {
+
+    width: 100%;
+
+    height: 3px;
+
+    background: linear-gradient(90deg, var(--blue), var(--green));
+
+    border-radius: 3px;
+
+}
+
+
+
+.connection-label {
+
+    color: var(--blue);
+
+    font-size: 9px;
+
+    text-align: center;
+
+    font-weight: 700;
+
+}
+
+
+
+.network-card-footer {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    border-top: 1px solid var(--border);
+
+    background: #fbfdff;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    text-align: center;
+
+}
+
+
+
+.floating-badge {
+
+    position: absolute;
+
+    right: -18px;
+
+    bottom: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.badge-check {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-radius: 50%;
+
+    color: var(--white);
+
+    background: var(--green);
+
+    font-weight: bold;
+
+}
+
+
+
+.floating-badge strong,
+
+.floating-badge small {
+
+    display: block;
+
+}
+
+
+
+.floating-badge strong {
+
+    color: var(--navy);
+
+    font-size: 12px;
+
+}
+
+
+
+.floating-badge small {
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    margin-top: 3px;
+
+}
+
+
+
+/* =========================================
+
+/* Benefits */
+*/
+.benefit-strip {
+
+    background: var(--white);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.benefit-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+
+.benefit-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 27px 22px;
+
+    border-right: 1px solid var(--border);
+
+}
+
+
+
+.benefit-item:first-child {
+
+    border-left: 1px solid var(--border);
+
+}
+
+
+
+.benefit-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    border: 1px solid #c8e1f5;
+
+    border-radius: 8px;
+
+    color: var(--blue);
+
+    background: var(--light-blue);
+
+    font-size: 23px;
+
+}
+
+
+
+.benefit-item h3 {
+
+    color: var(--navy);
+
+    font-size: 13px;
+
+    margin: 0 0 5px;
+
+}
+
+
+
+.benefit-item p {
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    margin: 0;
+
+}
+
+
+
+/* =========================================
+
+/* General Sections */
+*/
+.section {
+
+    padding: 85px 0;
+
+}
+
+
+
+.section-heading h2,
+
+.center-heading h2,
+
+.solutions-content h2,
+
+.contact-content h2 {
+
+    color: var(--navy);
+
+    font-size: clamp(28px, 3vw, 39px);
+
+    line-height: 1.25;
+
+    margin: 0 0 18px;
+
+    letter-spacing: -0.6px;
+
+}
+
+
+
+.heading-line {
+
+    width: 65px;
+
+    height: 4px;
+
+    margin-top: 22px;
+
+    border-radius: 4px;
+
+    background: linear-gradient(90deg, var(--blue), var(--green));
+
+}
+
+
+
+/* =========================================
+
+/* About Section */
+*/
+.about-section {
+
+    background: var(--white);
+
+}
+
+
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 80px;
+
+}
+
+
+
+.section-heading h2 {
+
+    max-width: 430px;
+
+}
+
+
+
+.about-content p {
+
+    color: var(--muted);
+
+    margin: 0 0 18px;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+}
+
+
+
+.text-link,
+
+.card-link {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: var(--blue);
+
+    font-weight: 700;
+
+    font-size: 13px;
+
+}
+
+
+
+.text-link:hover,
+
+.card-link:hover {
+
+    color: var(--green);
+
+}
+
+
+
+/* =========================================
+
+/* Services Section */
+*/
+.services-section {
+
+    background: var(--background);
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+
+.center-heading {
+
+    max-width: 680px;
+
+    margin: 0 auto 43px;
+
+    text-align: center;
+
+}
+
+
+
+.center-heading h2 {
+
+    margin-bottom: 13px;
+
+}
+
+
+
+.center-heading p {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    margin: 0;
+
+}
+
+
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+
+}
+
+
+
+.service-card {
+
+    position: relative;
+
+    padding: 29px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    background: var(--white);
+
+    box-shadow: 0 4px 15px rgba(9, 44, 85, 0.035);
+
+    transition:
+
+        transform 0.2s ease,
+
+        box-shadow 0.2s ease,
+
+        border-color 0.2s ease;
+
+}
+
+
+
+.service-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #9dc8ea;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.service-icon {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 54px;
+
+    height: 54px;
+
+    border-radius: 9px;
+
+    font-size: 28px;
+
+    margin-bottom: 23px;
+
+}
+
+
+
+.blue-icon {
+
+    color: var(--blue);
+
+    background: #e6f2ff;
+
+}
+
+
+
+.green-icon {
+
+    color: #07845d;
+
+    background: #e2f8ef;
+
+}
+
+
+
+.orange-icon {
+
+    color: #a76500;
+
+    background: #fff0d9;
+
+}
+
+
+
+.service-number {
+
+    position: absolute;
+
+    top: 32px;
+
+    right: 27px;
+
+    color: #a9bbce;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+
+.service-card h3 {
+
+    color: var(--navy);
+
+    font-size: 19px;
+
+    line-height: 1.4;
+
+    margin: 0 0 13px;
+
+}
+
+
+
+.service-card p {
+
+    min-height: 112px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0;
+
+}
+
+
+
+/* =========================================
+
+/* Solutions Section */
+*/
+.solutions-section {
+
+    background: var(--white);
+
+}
+
+
+
+.solutions-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    align-items: center;
+
+    gap: 75px;
+
+}
+
+
+
+.solutions-content > p {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.check-list {
+
+    list-style: none;
+
+    margin: 0 0 30px;
+
+    padding: 0;
+
+}
+
+
+
+.check-list li {
+
+    position: relative;
+
+    padding: 9px 0 9px 30px;
+
+    color: var(--text);
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #edf1f6;
+
+}
+
+
+
+.check-list li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 8px;
+
+    color: var(--green);
+
+    font-weight: bold;
+
+}
+
+
+
+/* Solutions panel */
+
+
+
+.solutions-panel {
+
+    overflow: hidden;
+
+    border: 1px solid #cdddeb;
+
+    border-radius: 11px;
+
+    background: var(--white);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.panel-top {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 16px 20px;
+
+    background: var(--navy);
+
+}
+
+
+
+.panel-dot {
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #83b4dc;
+
+}
+
+
+
+.panel-title {
+
+    margin-left: 10px;
+
+    color: var(--white);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+
+.panel-content {
+
+    padding: 28px;
+
+}
+
+
+
+.panel-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+
+    padding: 16px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: #fbfdff;
+
+}
+
+
+
+.panel-symbol {
+
+    display: grid;
+
+    place-items: center;
+
+    width: 43px;
+
+    height: 43px;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: var(--light-blue);
+
+    color: var(--blue);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+}
+
+
+
+.panel-row strong {
+
+    display: block;
+
+    color: var(--navy);
+
+    font-size: 14px;
+
+}
+
+
+
+.panel-row p {
+
+    margin: 5px 0 0;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+}
+
+
+
+.panel-connector {
+
+    height: 23px;
+
+    width: 2px;
+
+    margin-left: 36px;
+
+    background: #a8cce8;
+
+}
+
+
+
+.panel-footer {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    padding: 15px;
+
+    border-top: 1px solid var(--border);
+
+    background: #f4f9fe;
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =========================================
+
+/* Contact Section */
+*/
+.contact-section {
+
+    background: #edf5fc;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    align-items: start;
+
+    gap: 75px;
+
+}
+
+
+
+.contact-content h2 {
+
+    max-width: 450px;
+
+}
+
+
+
+.contact-content > p {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    margin-bottom: 28px;
+
+}
+
+
+
+.contact-detail {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid #d4e2ef;
+
+}
+
+
+
+.contact-symbol {
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    width: 43px;
+
+    height: 43px;
+
+    border: 1px solid #c6dcef;
+
+    border-radius: 8px;
+
+    background: var(--white);
+
+    color: var(--blue);
+
+    font-size: 21px;
+
+}
+
+
+
+.contact-detail strong {
+
+    color: var(--navy);
+
+    font-size: 13px;
+
+}
+
+
+
+.contact-detail p {
+
+    margin: 3px 0 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+
+/* Contact form */
+
+
+
+.contact-form {
+
+    padding: 30px;
+
+    border: 1px solid #d0dfec;
+
+    border-radius: 10px;
+
+    background: var(--white);
+
+    box-shadow: var(--shadow);
+
+}
+
+
+
+.contact-form h3 {
+
+    color: var(--navy);
+
+    font-size: 23px;
+
+    margin: 0 0 23px;
+
+}
+
+
+
+.contact-form label {
+
+    display: block;
+
+    margin: 17px 0 7px;
+
+    color: var(--navy);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+
+.contact-form input,
+
+.contact-form select,
+
+.contact-form textarea {
+
+    display: block;
+
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 12px 13px;
+
+    border: 1px solid #cbd8e5;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    color: var(--text);
+
+    background: var(--white);
+
+    font-size: 13px;
+
+    transition:
+
+        border-color 0.2s ease,
+
+        box-shadow 0.2s ease;
+
+}
+
+
+
+.contact-form input:focus,
+
+.contact-form select:focus,
+
+.contact-form textarea:focus {
+
+    border-color: var(--bright-blue);
+
+    box-shadow: 0 0 0 3px rgba(8, 123, 193, 0.12);
+
+}
+
+
+
+.contact-form textarea {
+
+    resize: vertical;
+
+}
+
+
+
+.form-button {
+
+    width: 100%;
+
+    margin-top: 22px;
+
+}
+
+
+
+.form-note {
+
+    margin: 12px 0 0;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    text-align: center;
+
+}
+
+
+
+.form-message {
+
+    color: var(--blue);
+
+    font-size: 13px;
+
+    overflow-wrap: anywhere;
+
+}
+
+
+
+/* =========================================
+
+/* Footer */
+*/
+.site-footer {
+
+    background: var(--navy);
+
+    color: var(--white);
+
+}
+
+
+
+.footer-main {
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.8fr 1fr;
+
+    gap: 60px;
+
+    padding-top: 55px;
+
+    padding-bottom: 45px;
+
+}
+
+
+
+.footer-logo {
+
+    width: 190px;
+
+    max-height: 90px;
+
+    padding: 5px;
+
+    border-radius: 5px;
+
+    object-fit: contain;
+
+    background: var(--white);
+
+}
+
+
+
+.footer-brand p {
+
+    max-width: 300px;
+
+    color: #c7d8e9;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+}
+
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+}
+
+
+
+.footer-links h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 14px;
+
+}
+
+
+
+.footer-links a {
+
+    color: #c7d8e9;
+
+    font-size: 12px;
+
+}
+
+
+
+.footer-links a:hover {
+
+    color: var(--white);
+
+    text-decoration: underline;
+
+}
+
+
+
+.footer-bottom {
+
+    border-top: 1px solid #24466b;
+
+}
+
+
+
+.footer-bottom-inner {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-top: 15px;
+
+    padding-bottom: 15px;
+
+}
+
+
+
+.footer-bottom p,
+
+.footer-bottom a {
+
+    color: #c7d8e9;
+
+    font-size: 11px;
+
+    margin: 0;
+
+}
+
+
+
+/* =========================================
+
+/* Tablet Responsive Design */
+*/
+
+
+
+
+/* =========================================
+
+/* Mobile Navigation And Layout */
+*/
+
+
+
+
+/* =========================================
+
+/* Small Mobile Phones */
+*/
+
+
+
+
+/* =========================================
+
+/* Accessibility */
+*/
+
+
+
+
+/* =========================================
+
+
+
+/* =========================================
+   CAMPUSLINK LOGO THEME + READABLE TEXT
+*/
+
+.site-header {
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #087BFF, #00D4FF, #782BFF, #F000B8) 1;
+}
+
+.hero {
+    background:
+        radial-gradient(circle at 90% 15%, #E9DFFF 0, transparent 38%),
+        linear-gradient(120deg, #FFFFFF, #F1F4FF);
+    border-bottom: 3px solid #00BFFF;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #087BFF, #782BFF, #F000B8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.button-primary,
+.nav-cta,
+.form-button {
+    background: linear-gradient(100deg, #087BFF, #782BFF, #F000B8);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.button-primary:hover,
+.nav-cta:hover {
+    background: linear-gradient(100deg, #0659C9, #6120D8, #C90098);
+}
+
+.button-outline {
+    border: 2px solid #782BFF;
+    color: #6120D8;
+}
+
+.button-outline:hover {
+    background: #F1E9FF;
+}
+
+.network-card {
+    border: 2px solid #782BFF;
+}
+
+.network-icon {
+    background: linear-gradient(135deg, #087BFF, #782BFF, #F000B8);
+}
+
+.connection-line {
+    background: linear-gradient(90deg, #087BFF, #00D4FF, #782BFF, #F000B8);
+}
+
+.status-dot,
+.badge-check {
+    background: #782BFF;
+}
+
+.benefit-icon {
+    border-color: #B8B9FF;
+    color: #6120D8;
+    background: #F1E9FF;
+}
+
+.services-section {
+    background: linear-gradient(180deg, #F5F7FF, #FFFFFF, #FFF2FC);
+    border-top: 2px solid #087BFF;
+    border-bottom: 2px solid #F000B8;
+}
+
+.service-card:nth-child(1) { border-top: 5px solid #087BFF; }
+.service-card:nth-child(2) { border-top: 5px solid #782BFF; }
+.service-card:nth-child(3) { border-top: 5px solid #F000B8; }
+
+.blue-icon { color: #087BFF; background: #E8F2FF; }
+.green-icon { color: #6120D8; background: #F1E9FF; }
+.orange-icon { color: #C90098; background: #FFF0FA; }
+
+.solutions-panel { border: 2px solid #782BFF; }
+.panel-top { background: linear-gradient(100deg, #090B25, #32105C); }
+.panel-connector { background: #B9A5FF; }
+.panel-footer {
+    background: linear-gradient(90deg, #EEF2FF, #FFF0FA);
+    color: #6120D8;
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #EEF2FF, #F8F7FF, #FFF0FA);
+    border-top: 3px solid #00BFFF;
+}
+
+.contact-form {
+    border: 2px solid #782BFF;
+    border-top: 5px solid #F000B8;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #782BFF;
+    box-shadow: 0 0 0 3px rgba(120, 43, 255, 0.14);
+}
+
+.site-footer {
+    background: linear-gradient(120deg, #090B25, #151044, #32105C);
+    border-top: 4px solid transparent;
+    border-image: linear-gradient(90deg, #087BFF, #00D4FF, #782BFF, #F000B8) 1;
+}
+
+.footer-bottom { border-top: 1px solid #51417D; }
+
+/* Increase text sizes for readability */
+.top-bar { font-size: 14px; }
+.nav-link { font-size: 16px; }
+.nav-cta { font-size: 15px; }
+.eyebrow { font-size: 14px; }
+.hero-description { font-size: 18px; }
+.button { font-size: 16px; }
+.hero-note { font-size: 14px; }
+
+.network-card-header h2 { font-size: 23px; }
+.network-card-header p { font-size: 14px; }
+.building strong { font-size: 15px; }
+.building small { font-size: 12px; }
+.connection-label { font-size: 12px; }
+.network-card-footer { font-size: 13px; }
+.floating-badge strong { font-size: 14px; }
+.floating-badge small { font-size: 12px; }
+
+.benefit-item h3 { font-size: 16px; }
+.benefit-item p { font-size: 14px; }
+.about-content p,
+.center-heading p,
+.solutions-content > p,
+.contact-content > p { font-size: 17px; }
+
+.service-card h3 { font-size: 21px; }
+.service-card p { font-size: 16px; }
+.panel-title { font-size: 14px; }
+.panel-row strong { font-size: 16px; }
+.panel-row p { font-size: 14px; }
+.panel-footer { font-size: 14px; }
+
+.contact-detail strong,
+.contact-detail p { font-size: 15px; }
+.contact-form h3 { font-size: 25px; }
+.contact-form label { font-size: 15px; }
+.contact-form input,
+.contact-form select,
+.contact-form textarea { font-size: 16px; }
+.form-note { font-size: 13px; }
+.form-message { font-size: 15px; }
+
+.footer-brand p { font-size: 15px; }
+.footer-links h3 { font-size: 16px; }
+.footer-links a { font-size: 14px; }
+.footer-bottom p,
+.footer-bottom a { font-size: 13px; }
+
+
+
+/* CampusLink desktop-only header theme */
+.site-header {
+    background: #080817;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(90deg, #087BFF, #00D4FF, #782BFF, #F000B8) 1;
+}
+.header-inner {
+    min-height: 135px;
+    gap: 30px;
+}
+.logo {
+    width: 440px;
+    max-height: 120px;
+}
+.main-nav {
+    gap: 22px;
+    flex-shrink: 0;
+}
+.nav-link {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.nav-link:hover,
+.nav-link.active {
+    color: #00D4FF;
+}
+.nav-cta {
+    background: linear-gradient(100deg, #087BFF, #782BFF, #F000B8);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Top information bar -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Connecting Buildings. Connecting People.</span>
+            <span class="top-message">Reliable Wireless Solutions</span>
+        </div>
+    </div>
+
+
+    <!-- Desktop header using the CampusLink logo image -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="CampusLink home">
+                <img src="logo.jpeg" alt="CampusLink – Smart Campus Connectivity" class="logo">
+            </a>
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#solutions" class="nav-link">Solutions</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-cta">Get a Quote <span>↗</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero section -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        CampusLink
+                    </span>
+
+                    <h1>
+                        Connecting Buildings.
+                        <span>Bringing Campuses Together.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Smart point-to-point wireless connectivity
+                        for universities, schools and business facilities.
+                        Extend your existing network without the need
+                        for a new fibre route where wireless is suitable.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#services" class="button button-primary">
+                            Explore Our Services →
+                        </a>
+
+                        <a href="#contact" class="button button-outline">
+                            Contact Our Team
+                        </a>
+                    </div>
+
+                    <div class="hero-note">
+                        <span class="status-dot"></span>
+                        Designed around your network needs
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="network-card">
+                        <div class="network-card-header">
+                            <span class="network-icon">⌘</span>
+                            <div>
+                                <h2>CampusLink</h2>
+                                <p>Wireless Connectivity Solutions</p>
+                            </div>
+                        </div>
+
+                        <div class="network-diagram">
+                            <div class="building">
+                                <span class="building-icon">▥</span>
+                                <strong>Building A</strong>
+                                <small>Existing Network</small>
+                            </div>
+
+                            <div class="connection">
+                                <span class="connection-line"></span>
+                                <span class="connection-label">Wireless Link</span>
+                                <span class="connection-line"></span>
+                            </div>
+
+                            <div class="building">
+                                <span class="building-icon">▥</span>
+                                <strong>Building B</strong>
+                                <small>Connected Building</small>
+                            </div>
+                        </div>
+
+                        <div class="network-card-footer">
+                            <span>Secure Configuration</span>
+                            <span>Network Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge">
+                        <span class="badge-check">✓</span>
+                        <div>
+                            <strong>One Connected Campus</strong>
+                            <small>Built for your requirements</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Quick benefits -->
+        <section class="benefit-strip">
+            <div class="container benefit-grid">
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">↔</span>
+                    <div>
+                        <h3>Building Connectivity</h3>
+                        <p>Link nearby buildings wirelessly.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">◇</span>
+                    <div>
+                        <h3>Network Integration</h3>
+                        <p>Extend an existing campus network.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">✓</span>
+                    <div>
+                        <h3>Technical Support</h3>
+                        <p>Optional monitoring and maintenance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+
+                <div class="section-heading">
+                    <span class="eyebrow">WHO WE ARE</span>
+                    <h2>Connectivity That Brings Your Buildings Together</h2>
+                    <div class="heading-line"></div>
+                </div>
+
+                <div class="about-content">
+                    <p>
+                        CampusLink provides wireless
+                        connectivity solutions for organisations
+                        that need to connect nearby buildings.
+                    </p>
+
+                    <p>
+                        Our CampusLink service is designed to extend
+                        an existing network using outdoor point-to-point
+                        wireless equipment when the site conditions
+                        are suitable.
+                    </p>
+
+                    <p>
+                        Each installation is planned around the
+                        customer's building layout, network requirements,
+                        security needs and budget.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Discuss your requirements →
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section services-section" id="services">
+            <div class="container">
+
+                <div class="center-heading">
+                    <span class="eyebrow">WHAT WE OFFER</span>
+                    <h2>Our Services</h2>
+                    <p>
+                        Practical network solutions for connected
+                        campuses and business facilities.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon blue-icon">↔</div>
+                        <span class="service-number">01</span>
+
+                        <h3>Point-to-Point Connectivity</h3>
+
+                        <p>
+                            Connect two nearby buildings using
+                            outdoor directional wireless equipment
+                            when a suitable wireless path is available.
+                        </p>
+
+                        <a href="#contact" class="card-link">
+                            Learn more →
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon green-icon">⌘</div>
+                        <span class="service-number">02</span>
+
+                        <h3>Network Integration</h3>
+
+                        <p>
+                            Integrate the wireless link with the
+                            customer's existing network, switches
+                            and approved network security settings.
+                        </p>
+
+                        <a href="#contact" class="card-link">
+                            Learn more →
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon orange-icon">◉</div>
+                        <span class="service-number">03</span>
+
+                        <h3>Monitoring and Support</h3>
+
+                        <p>
+                            Optional network monitoring, connectivity
+                            checks, maintenance records and technical
+                            support according to the agreed service.
+                        </p>
+
+                        <a href="#contact" class="card-link">
+                            Learn more →
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions -->
+        <section class="section solutions-section" id="solutions">
+            <div class="container solutions-grid">
+
+                <div class="solutions-content">
+                    <span class="eyebrow">OUR SOLUTIONS</span>
+
+                    <h2>Designed for Your Connectivity Needs</h2>
+
+                    <p>
+                        Every site is different. We assess the
+                        distance between buildings, line of sight,
+                        radio interference and the existing network
+                        before recommending a solution.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>Site survey and wireless link assessment</li>
+                        <li>Equipment installation and configuration</li>
+                        <li>Network security and traffic separation</li>
+                        <li>Connectivity testing and documentation</li>
+                        <li>Optional ongoing technical support</li>
+                    </ul>
+
+                    <a href="#contact" class="button button-primary">
+                        Plan Your Connection →
+                    </a>
+                </div>
+
+                <div class="solutions-panel">
+                    <div class="panel-top">
+                        <span class="panel-dot"></span>
+                        <span class="panel-dot"></span>
+                        <span class="panel-dot"></span>
+                        <span class="panel-title">CampusLink Overview</span>
+                    </div>
+
+                    <div class="panel-content">
+                        <div class="panel-row">
+                            <span class="panel-symbol">01</span>
+                            <div>
+                                <strong>Survey</strong>
+                                <p>Assess the site and requirements</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-connector"></div>
+
+                        <div class="panel-row">
+                            <span class="panel-symbol">02</span>
+                            <div>
+                                <strong>Connect</strong>
+                                <p>Install and configure the wireless link</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-connector"></div>
+
+                        <div class="panel-row">
+                            <span class="panel-symbol">03</span>
+                            <div>
+                                <strong>Test and Support</strong>
+                                <p>Verify performance and document results</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <span>Plan</span>
+                        <span>Connect</span>
+                        <span>Verify</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+
+                <div class="contact-content">
+                    <span class="eyebrow">LET'S CONNECT</span>
+
+                    <h2>Have a Building Connectivity Project?</h2>
+
+                    <p>
+                        Tell us about your buildings and connectivity
+                        requirements. Our team can review your enquiry
+                        and discuss the next steps.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="contact-symbol">✉</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>Contact details to be added</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span class="contact-symbol">⌖</span>
+                        <div>
+                            <strong>Service Area</strong>
+                            <p>Confirm your company's operating locations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Send an Enquiry</h3>
+
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="organisation">University or organisation</label>
+                    <input type="text" id="organisation" name="organisation"
+                           placeholder="Organisation name" required>
+
+                    <label for="email">Business email</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="name@organisation.com" required>
+
+                    <label for="service">Service of interest</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option value="wireless">Wireless connectivity</option>
+                        <option value="integration">Network integration</option>
+                        <option value="monitoring">Monitoring and support</option>
+                        <option value="other">Other enquiry</option>
+                    </select>
+
+                    <label for="message">Project details</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Tell us about your project"
+                              required></textarea>
+
+                    <button type="submit" class="button button-primary form-button">
+                        Prepare Enquiry →
+                    </button>
+
+                    <p class="form-note">
+                        Demo form only. It does not send or save your
+                        information yet.
+                    </p>
+
+                    <p id="formMessage" class="form-message"
+                       role="status" aria-live="polite"></p>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <img src="logo.jpeg"
+                     alt="CampusLink – Smart Campus Connectivity logo"
+                     class="footer-logo">
+
+                <p>
+                    Bridging Opportunities, Delivering Easy
+                    and Global Connectivity.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#about">About Us</a>
+                <a href="#services">Our Services</a>
+                <a href="#solutions">Solutions</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-links">
+                <h3>Our Services</h3>
+                <a href="#services">Wireless Connectivity</a>
+                <a href="#services">Network Integration</a>
+                <a href="#services">Monitoring and Support</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>
+                    © <span id="currentYear"></span>
+                    Bodex. All rights reserved.
+                </p>
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    "use strict";
+
+    // Highlight the navigation link for the section currently in view.
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".main-nav .nav-link");
+
+    if ("IntersectionObserver" in window) {
+        const sectionObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                navLinks.forEach(function (link) {
+                    link.classList.toggle(
+                        "active",
+                        link.getAttribute("href") === "#" + entry.target.id
+                    );
+                });
+            });
+        }, { rootMargin: "-25% 0px -60% 0px" });
+
+        sections.forEach(function (section) {
+            sectionObserver.observe(section);
+        });
+    }
+
+    // Automatically show the current year in the footer.
+    const yearElement = document.getElementById("currentYear");
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
+
+    // Demo contact form: validates fields but does not send/store data.
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (!contactForm.reportValidity()) return;
+
+            const formData = new FormData(contactForm);
+            const name = String(formData.get("name") || "").trim();
+            const organisation = String(formData.get("organisation") || "").trim();
+            const email = String(formData.get("email") || "").trim();
+            const service = String(formData.get("service") || "").trim();
+            const message = String(formData.get("message") || "").trim();
+
+            if (!name || !organisation || !email || !service || !message) {
+                formMessage.textContent = "Please complete all fields before continuing.";
+                return;
+            }
+
+            formMessage.textContent = "Thank you, " + name +
+                ". The demo form is working, but enquiries are not yet sent or saved.";
+        });
+    }
+    </script>
+
+</body>
+</html>
